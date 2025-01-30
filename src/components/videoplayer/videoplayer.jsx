@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ReactPlayer from 'react-player/youtube'
 
+// This component was imported from the MUI page for cards
+
 const bull = (
   <Box
     component="span"
@@ -16,6 +18,7 @@ const bull = (
   </Box>
 );
 
+// The reactplayer component  only plays one hardcoded video at the moment but will later need a prop passed down for the current video
 const card = (
   <React.Fragment>
     <CardContent>
@@ -32,7 +35,7 @@ const card = (
       </Typography>
     </CardContent>
     <CardActions>
-       <ReactPlayer url='https://www.youtube.com/watch?v=2ydCvkxuNm4' />
+       <ReactPlayer url='https://www.youtube.com/watch?v=lcOxhH8N3Bo' />
     </CardActions>
   </React.Fragment>
 );
@@ -45,6 +48,7 @@ export default function VideoPlayerCard() {
   );
 }
 
+// Early test code
 // export default function VideoplayerCard() {
 //   return(
 //     <div>
