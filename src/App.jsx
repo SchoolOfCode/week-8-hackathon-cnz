@@ -9,6 +9,8 @@ function App() {
 
   // initialize state of videos with data imported from data.js
   const [videos, setVideos] = useState(data);
+  // initialize state of currentVideo to null - this will be used to store the video that is currently playing
+  const [currentVideo, setCurrentVideo] = useState(null);
 
   return (
     <>
