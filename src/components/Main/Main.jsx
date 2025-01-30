@@ -1,10 +1,13 @@
 import VideoPlayerCard from "../Videoplayer/Videoplayer";
+import { useState } from 'react'
+import { data } from '../../data/data';
 
 function Main() {
+  // initialize state of videos with data imported from data.js
+  const [videos, setVideos] = useState(data);
+
   return (
     <main>
-      <h1>Week 8 Hackathon</h1>
-      <p>This is for you Faisal! 🎶</p>
       {/* <AddSongForm /> */}
       {/* <SongList /> */}
       <VideoPlayerCard />
