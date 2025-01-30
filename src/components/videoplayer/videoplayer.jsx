@@ -18,7 +18,7 @@ const bull = (
   </Box>
 );
 
-// The reactplayer component  only plays one hardcoded video at the moment but will later need a prop passed down for the current video
+// The reactplayer component only plays one hardcoded video at the moment but will later need a prop passed down for the current video
 const card = (
   <React.Fragment>
     <CardContent>

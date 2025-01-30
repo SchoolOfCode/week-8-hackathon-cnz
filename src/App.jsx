@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css';
-import VideoPlayerCard from './components/videoplayer/videoplayer';
-import Header from './header/header';
-import Footer from './footer/footer';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 import { data } from './data/data';
 
 function App() {
@@ -12,14 +12,11 @@ function App() {
 
   return (
     <>
-      <div>
-        <Header />
-        <VideoPlayerCard />
-        <Footer />
-      </div>
-      
+      <Header />
+      <Main />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
