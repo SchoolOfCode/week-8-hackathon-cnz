@@ -10,7 +10,7 @@ export const data = [
         id: 2,
         title: 'Bye Bye Bye',
         username: 'Sumeya',
-        url: 'https://www.youtube.com/watch?v=lcOxhH8N3Bo',
+        url: 'https://www.youtube.com/watch?v=2ydCvkxuNm4',
         description: 'This is a video 2'
     },
 ];

@@ -35,7 +35,7 @@ const card = (
       </Typography>
     </CardContent>
     <CardActions>
-       <ReactPlayer url='https://www.youtube.com/watch?v=lcOxhH8N3Bo' />
+       <ReactPlayer url='https://www.youtube.com/watch?v=2ydCvkxuNm4' />
     </CardActions>
   </React.Fragment>
 );
