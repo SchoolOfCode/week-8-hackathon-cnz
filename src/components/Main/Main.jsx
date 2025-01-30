@@ -5,12 +5,14 @@ import { data } from '../../data/data';
 function Main() {
   // initialize state of videos with data imported from data.js
   const [videos, setVideos] = useState(data);
+  // set video in the array for the time being
+  const video = videos[1];
 
   return (
     <main>
       {/* <AddSongForm /> */}
-      {/* <SongList /> */}
-      <VideoPlayerCard />
+      {/* <SongList videos={videos} /> */}
+      <VideoPlayerCard video={video} />
     </main>
   );
 }
