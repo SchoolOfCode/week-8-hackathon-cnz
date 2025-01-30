@@ -5,10 +5,11 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 
+export default function VideoPlayerCard({ video }) {
+  
 // This component was imported from the MUI page for cards
-
 const bull = (
   <Box
     component="span"
@@ -22,25 +23,25 @@ const bull = (
 const card = (
   <React.Fragment>
     <CardContent>
+      <Typography variant="body1">
+        {video.message}
+      </Typography>
       <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-        Song of the Day
+        {video.username}
       </Typography>
       <Typography variant="h5" component="div">
-        Bye Bye Bye
+        {video.title}
       </Typography>
       <Typography variant="body2">
-        N'Sync
-        <br />
-        {'"You can\'t just blame Sumeya for this..."'}
+        {video.artist}
       </Typography>
     </CardContent>
     <CardActions>
-       <ReactPlayer url='https://www.youtube.com/watch?v=2ydCvkxuNm4' />
+      <ReactPlayer url={video.url} />
     </CardActions>
   </React.Fragment>
 );
 
-export default function VideoPlayerCard() {
   return (
     <Box sx={{ minWidth: 275 }}>
       <Card variant="outlined">{card}</Card>
