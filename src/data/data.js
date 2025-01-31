@@ -31,4 +31,20 @@ export const data = [
         username: 'Nick G',
         message: 'Stretch through the slow start and wait for the beat to drop!',
     },
+    {
+        id: 5,
+        artist: 'Rose & Bruno Mars',
+        title: 'A.P.T.',
+        url: 'https://www.youtube.com/watch?v=ekr2nIex040',
+        username: 'Carmen',
+        message: 'Get ready for squats!!',
+    },
+    {
+        id: 6,
+        artist: 'Coldplay',
+        title: 'Viva la vida',
+        url: 'https://www.youtube.com/watch?v=dvgZkm1xWPE',
+        username: 'Fred Flintstone',
+        message: 'Move your bodies team!',
+    },
 ];
