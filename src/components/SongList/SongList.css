@@ -1,0 +1,8 @@
+.song-list {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+}

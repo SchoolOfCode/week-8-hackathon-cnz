@@ -1,20 +1,26 @@
-import VideoPlayerCard from "../VideoPlayer/VideoPlayer";
 import { useState } from 'react'
 import { data } from '../../data/data';
 import AddSongForm from "../Form/Form";
+import VideoPlayerCard from "../VideoPlayer/VideoPlayer";
+import SongList from "../SongList/SongList";
 
 function Main() {
-  // initialize state of videos with data imported from data.js
-  const [videos, setVideos] = useState(data);
+  // initialise state of videos with data imported from data.js
+  const [ videos, setVideos ] = useState(data);
+  // initialise state of currently selected video
+  const [ currentVideo, setCurrentVideo ] = useState(null);
 
-  //workaround
-  const video = videos[1];
-  
+  function handleClickSongCard(e) {
+    // preventDefault(e);
+    setCurrentVideo(e);
+    console.log(e);
+  }
+
   return (
     <main>
       <AddSongForm videos={videos} setVideos={setVideos}/> 
-      {/* <SongList /> */}
-      <VideoPlayerCard video={video}/>
+      <VideoPlayerCard currentVideo={videos[currentVideo]} />
+      <SongList handleClickSongCard={handleClickSongCard} videos={videos} />
     </main>
   );
 }
