@@ -11,10 +11,17 @@ function Main() {
   const [ currentVideo, setCurrentVideo ] = useState(null);
 
   function handleClickSongCard(e) {
-    // preventDefault(e);
+    // e.preventDefault();
+    console.log(`before random: ${e}`);
+    if (e === 0) {
+      let randomSongIndex = Math.floor(Math.random() * (videos.length - 1)) + 1;
+      setCurrentVideo(randomSongIndex);
+      console.log(`random index: ${randomSongIndex}`);
+      return;
+    }
+    console.log(`after random: ${e}`);
     setCurrentVideo(e);
-    console.log(e);
-  }
+  }  
 
   return (
     <main>
