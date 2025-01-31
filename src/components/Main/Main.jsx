@@ -1,18 +1,20 @@
-import VideoPlayerCard from "../Videoplayer/Videoplayer";
+import VideoPlayerCard from "../VideoPlayer/VideoPlayer";
 import { useState } from 'react'
 import { data } from '../../data/data';
+import AddSongForm from "../Form/Form";
 
 function Main() {
   // initialize state of videos with data imported from data.js
   const [videos, setVideos] = useState(data);
-  // set video in the array for the time being
-  const video = videos[1];
 
+  //workaround
+  const video = videos[1];
+  
   return (
     <main>
-      {/* <AddSongForm /> */}
-      {/* <SongList videos={videos} /> */}
-      <VideoPlayerCard video={video} />
+      <AddSongForm videos={videos} setVideos={setVideos}/> 
+      {/* <SongList /> */}
+      <VideoPlayerCard video={video}/>
     </main>
   );
 }
