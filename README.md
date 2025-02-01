@@ -2,9 +2,13 @@
 
 Welcome to Team CNZ's hackathon project built using React.
 
-## Overview
+## Overview: The challenge
 
 ~ To build something meaningful using the skills we’ve learned during web engineering week on React
+
+## Getting started
+
+Once you have cloned the repo, use `npm install` to install the dependencies. The deployed version of the app can be found here: https://trying-nu.vercel.app/  
 
 ## Team Approach
 
@@ -29,17 +33,22 @@ Play random song
 MVP 5
 Create a carousel 
 MVP 6
-Host and client platforms for Faisal for SoC session
+Host and client platforms for the School of Code session
 
 ## Challenges
 
-Initial challenges we came accross were how exactly to embed a video using React, and questions over how exactly to access the song data: set up a database and a server then fetch the data using an API or hard code. Due to time constraints, we decided to hard code but we would move to an external database as the next step. 
-During build, we cam across challenges using 
+Initial challenges we came accross were how exactly to embed a video using React, and questions over how exactly to access the song data: set up a database and a server then fetch the data using an API or hard code the data. Due to time constraints, we decided to hard code but we would move to an external database as the next step. 
+During build, we had issues trying to have the 'random song' button as a card along with the other song cards. We would instead have it as a 'random song' button separate from the song cards. 
 
 ## Learning Points
 
-Using ready built components takes time to incorporate them into your code. 
+Using ready built components - such as those for the video card and the form, taken from Material UI - take time intially to be incorporated into your code. A robust and clear file structure is essential for ease of navigation. We would have liked to incorporate testing. 
 
-## Stretch Goals
+## Acknowledgments 
+
+Built by Team CNZ :- 
+Carmen Zakaria https://github.com/CarmenZak?tab=repositories 
+Nicholas Goh 
+Zsolt Peter https://github.com/Zsolt-qwerty 
 
 
